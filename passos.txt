@@ -11,8 +11,8 @@ npm i
 Rodar o projeto:
 npx expo start
 
-Pacote web(entrar na web):
-"npx expo install react-dom react-native-web @expo/metro-runtime" Baixar p/ rodar na web
+Pacote web(entrar na web):"
+"npx expo install react-dom react-native-web @expo/metro-runtime" Baixar p/ rodar na web"
 
 Pacote Expo-Router:
 npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar
