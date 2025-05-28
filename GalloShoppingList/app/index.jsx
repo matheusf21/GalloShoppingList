@@ -1,5 +1,5 @@
+import { Link } from 'expo-router'
 import { StatusBar } from 'expo-status-bar';
-import { Link } from 'expo-router';
 import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default function Welcome() {
@@ -11,18 +11,19 @@ export default function Welcome() {
           style={styles.avatar}
         />
       </View>
-      <View style={styles.content}> 
+      <View style={styles.content}>
         <Text style={styles.title}>
           Gallo Shopping List
-          </Text>
+        </Text>
         <Text style={styles.text}>
-          Monte sua lista de compras e não esqueça mais nada ao sair de casa!
-          </Text>
+          Monte sua lista de compras e não esqueça mais
+          o que precisa comprar ao sair de casa!!!
+        </Text>
         <Link style={styles.button} href={"/home"}>
           <Text style={styles.buttonText}>Acessar</Text>
         </Link>
-
       </View>
+      
       <StatusBar style="light" backgroundColor='#000' />
     </View>
   );
@@ -42,12 +43,13 @@ const styles = StyleSheet.create({
     width: 230,
     height: 230,
     borderRadius: 115,
-    reziseMode: 'cover',
+    resizeMode: 'cover',
   },
   content: {
     flex: 1,
     backgroundColor: '#dadada',
     borderTopLeftRadius: 25,
+    borderTopRightRadius:25,
     paddingHorizontal: '5%'
   },
   title: {
@@ -55,7 +57,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginTop: 28,
     marginBottom: 20,
-    textAlign: 'center', 
+    textAlign: 'center',
   },
   text: {
     fontSize: 16,
@@ -63,7 +65,7 @@ const styles = StyleSheet.create({
   },
   button: {
     position: 'absolute',
-    bottom: '15%',
+    bottom: '10%',
     backgroundColor: '#000',
     alignSelf: 'center',
     borderRadius: 50,
@@ -74,6 +76,6 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 22,
     color: '#fff',
-    fontWeight: 'bold',
+    fontWeight: 'bold'
   }
 });
